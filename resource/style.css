@@ -4,17 +4,65 @@ header {
     font-weight: bold;
     color: mediumaquamarine;
     display: flex;
-
-}
-nav {
-    display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
-span {
-    display: inline-block;
 
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
 }
 .logo {
+    width: 70px;
+    height: 60px;
+    flex-grow: 1;
+    padding-left: 30px;
     display: flex;
     align-items: center;
+}
+header nav{
+    padding-right: 40px;
+}
+a {
+    color: black;
+}
+div {
+    border: 1px solid black;
+}
+.content{
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+}
+.column.large {
+    width: 630px;
+}
+.column.middle {
+    width: 300px;
+}
+.column.small {
+    width: 240px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.lead.image{
+    background-image: url("img-story-main.png")
+}
+.img-research{
+    background-image: url("img-story-3.png")
+}
+.img-earth {
+    background-image: url("img-story-2.png")
+}
+.cat-image{
+    background-image: url("img-story-1.png")
 }
